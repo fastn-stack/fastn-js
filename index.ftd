@@ -2,50 +2,40 @@
 
 
 
--- ds.page: Welcome to your [FASTN site](https://fastn.dev/)
+-- ds.page: Fastn JS library
 
--- ftd.column:
-align-self: center
+This repo contains all useful js scripts which the users can use on their FTD pages
+as per their requirement.
 
--- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
-
--- ds.markdown: 
-
-You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
-
--- end: chat.message-left
-
--- chat.message-right:  😊 Liking this chat component?
-
--- ds.markdown:
-
-[Click here to learn more](https://fifthtry.github.io/bling/chat/)
-👍
-
--- end: chat.message-right
-
--- end: ftd.column
-
--- ds.h1: How to use?
-
-It's very simple like making a sandwich. Create new `.ftd` file and just say:
-
--- ds.code: `-- ds.page` 
+-- ds.code: Add this dependency in your FASTN.ftd
 lang: ftd
 
-\-- ds.page: Your page title goes here
+\-- fastn.dependency: fifthtry.github.io/fastn-js
 
-Your page content goes here.
+-- ds.h1: Use any JS module by importing it
 
+-- ds.code: Import your js module
+lang: ftd
 
--- ds.h1: Need sidebar at right side of page?
+\-- import: fifthtry.github.io/fastn-js/assets as js-assets
 
-Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
+-- ds.h1: Use your JS function
 
+You can use your JS function inside any FTD function by
+attaching your JS module to it.
 
--- ds.h1: 👀 Learn FTD and become a pro?
+Let's say you have a `str.js` module containing `append(a,b)` function
+which returns the appended string after combining string a and b.
+If you want to use it, you can do it in the following way.
 
-You are one click away, just check [our documentation](https://fastn.dev/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ds.code:
+lang: ftd
+
+\-- string append-strings(a,b):
+string a:
+string b:
+js: $js-assets.files.str.js
+
+append(a,b)
 
 -- end: ds.page

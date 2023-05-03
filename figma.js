@@ -147,6 +147,13 @@ function figma_json_to_ftd(json) {
     light: ${get_color_value(cs_light, "CTA Primary Colors", "text")}
     dark: ${get_color_value(cs_dark, "CTA Primary Colors", "text")}
 
+    -- ftd.color cta-primary-text-disabled-:
+    light: ${get_color_value(cs_light, "CTA Primary Colors", "text-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Primary Colors", "text-disabled")}
+
+    -- ftd.color cta-primary-border-disabled-:
+    light: ${get_color_value(cs_light, "CTA Primary Colors", "border-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Primary Colors", "border-disabled")}
 
     -- ftd.cta-colors cta-primary-:
     base: $cta-primary-base-
@@ -156,6 +163,8 @@ function figma_json_to_ftd(json) {
     focused: $cta-primary-focused-
     border: $cta-primary-border-
     text: $cta-primary-text-
+    text-disabled: $cta-primary-text-disabled-
+    border-disabled: $cta-primary-border-disabled-
 
     -- ftd.color cta-secondary-base-:
     light: ${get_color_value(cs_light, "CTA Secondary Colors", "base")}
@@ -185,6 +194,14 @@ function figma_json_to_ftd(json) {
     light: ${get_color_value(cs_light, "CTA Secondary Colors", "text")}
     dark: ${get_color_value(cs_dark, "CTA Secondary Colors", "text")}
 
+    -- ftd.color cta-secondary-text-disabled-:
+    light: ${get_color_value(cs_light, "CTA Secondary Colors", "text-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Secondary Colors", "text-disabled")}
+
+    -- ftd.color cta-secondary-border-disabled-:
+    light: ${get_color_value(cs_light, "CTA Secondary Colors", "border-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Secondary Colors", "border-disabled")}
+
     -- ftd.cta-colors cta-secondary-:
     base: $cta-secondary-base-
     hover: $cta-secondary-hover-
@@ -193,6 +210,8 @@ function figma_json_to_ftd(json) {
     focused: $cta-secondary-focused-
     border: $cta-secondary-border-
     text: $cta-secondary-text-
+    text-disabled: $cta-secondary-text-disabled-
+    border-disabled: $cta-secondary-border-disabled-
 
     -- ftd.color cta-tertiary-base-:
     light: ${get_color_value(cs_light, "CTA Tertiary Colors", "base")}
@@ -222,6 +241,14 @@ function figma_json_to_ftd(json) {
     light: ${get_color_value(cs_light, "CTA Tertiary Colors", "text")}
     dark: ${get_color_value(cs_dark, "CTA Tertiary Colors", "text")}
 
+    -- ftd.color cta-tertiary-text-disabled-:
+    light: ${get_color_value(cs_light, "CTA Tertiary Colors", "text-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Tertiary Colors", "text-disabled")}
+
+    -- ftd.color cta-tertiary-border-disabled-:
+    light: ${get_color_value(cs_light, "CTA Tertiary Colors", "border-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Tertiary Colors", "border-disabled")}
+
     -- ftd.cta-colors cta-tertiary-:
     base: $cta-tertiary-base-
     hover: $cta-tertiary-hover-
@@ -230,6 +257,8 @@ function figma_json_to_ftd(json) {
     focused: $cta-tertiary-focused-
     border: $cta-tertiary-border-
     text: $cta-tertiary-text-
+    text-disabled: $cta-tertiary-text-disabled-
+    border-disabled: $cta-tertiary-border-disabled-
 
     -- ftd.color cta-danger-base-:
     light: ${get_color_value(cs_light, "CTA Danger Colors", "base")}
@@ -259,6 +288,14 @@ function figma_json_to_ftd(json) {
     light: ${get_color_value(cs_light, "CTA Danger Colors", "text")}
     dark: ${get_color_value(cs_dark, "CTA Danger Colors", "text")}
 
+    -- ftd.color cta-danger-text-disabled-:
+    light: ${get_color_value(cs_light, "CTA Danger Colors", "text-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Danger Colors", "text-disabled")}
+
+    -- ftd.color cta-danger-border-disabled-:
+    light: ${get_color_value(cs_light, "CTA Danger Colors", "border-disabled")}
+    dark: ${get_color_value(cs_dark, "CTA Danger Colors", "border-disabled")}
+
     -- ftd.cta-colors cta-danger-:
     base: $cta-danger-base-
     hover: $cta-danger-hover-
@@ -267,6 +304,8 @@ function figma_json_to_ftd(json) {
     focused: $cta-danger-focused-
     border: $cta-danger-border-
     text: $cta-danger-text-
+    text-disabled: $cta-danger-text-disabled-
+    border-disabled: $cta-danger-border-disabled-
 
     -- ftd.color accent-primary-:
     light: ${get_color_value(cs_light, "Accent Colors", "primary")}

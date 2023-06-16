@@ -12,7 +12,7 @@ string $store_at:
 string $formatted_string:
 js: $js-assets.files.typo.js
 
-value = typo_ftd(json);
+value = typo_to_ftd(json);
 store_at = value[0];
 formatted_string = value[1];
 

@@ -615,322 +615,428 @@ window.ftd.handle_event(event, 'main', '[{"name":"ftd__set_string___main","value
 
 
 
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-italic-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 100;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-100-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 300;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-300-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 400;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-400-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 500;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-500-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 700;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-700-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-cyrillic.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-greek-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-greek.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-vietnamese.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-latin-ext.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 900;
+src: url(-/fastn-community.github.io/roboto-font/static/Roboto-900-normal-latin.woff2) format('woff2');
+font-family: fastn-community-github-io-roboto-font-Roboto }
 
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 100;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-100-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 200;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-200-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 300;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-300-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 400;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-400-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 500;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-500-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 600;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-600-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 700;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-700-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 800;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-800-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-cyrillic-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-cyrillic.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+1F00-1FFF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-greek-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0370-03FF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-greek.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-vietnamese.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-latin-ext.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
-@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-font-style: normal;
-font-weight: 900;
-src: url(-/fifthtry.github.io/inter-font/static/Inter-900-normal-latin.woff2) format('woff2');
-font-family: fifthtry-github-io-inter-font-Inter }
+
 
 
 
@@ -1518,14 +1624,14 @@ window.ftd.utils.set_value_helper(data, "fastn-stack.github.io/fastn-js/json-exp
 
 window.ftd.call_mutable_value_changes("fastn-stack.github.io/fastn-js/json-exporter/#code:caption:0,1", "main");
 window.ftd.call_immutable_value_changes("fastn-stack.github.io/fastn-js/json-exporter/#code:caption:0,1", "main");
-window.ftd.utils.node_change_call("main","0,1,0,0:main__text", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__border-bottom-right-radius", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__border-top-right-radius", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__border-top-left-radius", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__border-top-left-radius", data);
 window.ftd.utils.node_change_call("main","0,1,1:main__border-top-right-radius", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__text", data);
 window.ftd.utils.node_change_call("main","0,1,0,0:main__display", data);
 window.ftd.utils.node_change_call("main","0,1,2:main__border-bottom-left-radius", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__border-top-right-radius", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__border-top-left-radius", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__border-top-left-radius", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__border-bottom-right-radius", data);
 };
 
 window.set_value_main["fastn-stack.github.io/fastn-js/json-exporter/#code:clip:0,1"] = function (data, new_value, remaining) {
@@ -1541,9 +1647,9 @@ window.ftd.utils.set_value_helper(data, "fastn-stack.github.io/fastn-js/json-exp
 
 window.ftd.call_mutable_value_changes("fastn-stack.github.io/fastn-js/json-exporter/#code:copy-text:0,1", "main");
 window.ftd.call_immutable_value_changes("fastn-stack.github.io/fastn-js/json-exporter/#code:copy-text:0,1", "main");
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__display", data);
 window.ftd.utils.node_change_call("main","0,1,0,1,0:main__display", data);
 window.ftd.utils.node_change_call("main","0,1,0,1,1:main__text", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__display", data);
 };
 
 window.set_value_main["fastn-stack.github.io/fastn-js/json-exporter/#formatted-string"] = function (data, new_value, remaining) {
@@ -1568,25 +1674,25 @@ window.ftd.utils.set_value_helper(data, "ftd#dark-mode", remaining, new_value);
 
 window.ftd.call_mutable_value_changes("ftd#dark-mode", "main");
 window.ftd.call_immutable_value_changes("ftd#dark-mode", "main");
-window.ftd.utils.node_change_call("main","0,1,0:main__background-color", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__display", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__background-image", data);
 window.ftd.utils.node_change_call("main","0,1,1:main__color", data);
+window.ftd.utils.node_change_call("main","0,1,0:main__background-position", data);
+window.ftd.utils.node_change_call("main","0,1,0:main__background-repeat", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__display", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__background-repeat", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__color", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__display", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__background-image", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__background-color", data);
+window.ftd.utils.node_change_call("main","0,1,0:main__background-color", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__color", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__color", data);
+window.ftd.utils.node_change_call("main","0,1,0:main__background-size", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__color", data);
 window.ftd.utils.node_change_call("main","0,1,2:main__border-color", data);
 window.ftd.utils.node_change_call("main","0,1,1:main__background-size", data);
-window.ftd.utils.node_change_call("main","0,1,0:main__background-size", data);
-window.ftd.utils.node_change_call("main","0,1,0:main__background-position", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__color", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__color", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__color", data);
 window.ftd.utils.node_change_call("main","0,1,0,0:main__color", data);
-window.ftd.utils.node_change_call("main","0,1,0:main__background-repeat", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__background-color", data);
 window.ftd.utils.node_change_call("main","0,1,1:main__background-position", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__background-repeat", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__display", data);
 window.ftd.utils.node_change_call("main","0,1,0:main__background-image", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__color", data);
 };
 
 window.set_value_main["ftd#default-colors"] = function (data, new_value, remaining) {
@@ -1594,13 +1700,13 @@ window.ftd.utils.set_value_helper(data, "ftd#default-colors", remaining, new_val
 
 window.ftd.call_mutable_value_changes("ftd#default-colors", "main");
 window.ftd.call_immutable_value_changes("ftd#default-colors", "main");
-window.ftd.utils.node_change_call("main","0,1,2:main__border-color", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__color", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__color", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__color", data);
 window.ftd.utils.node_change_call("main","0,1,0,0:main__color", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__color", data);
 window.ftd.utils.node_change_call("main","0,0,1:main__color", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__border-color", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__color", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__color", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__color", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__color", data);
 };
 
 window.set_value_main["ftd#default-types"] = function (data, new_value, remaining) {
@@ -1608,36 +1714,36 @@ window.ftd.utils.set_value_helper(data, "ftd#default-types", remaining, new_valu
 
 window.ftd.call_mutable_value_changes("ftd#default-types", "main");
 window.ftd.call_immutable_value_changes("ftd#default-types", "main");
-window.ftd.utils.node_change_call("main","0,1,0,0:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__font-family", data);
 window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__font-weight", data);
 window.ftd.utils.node_change_call("main","0,0,1:main__font-weight", data);
 window.ftd.utils.node_change_call("main","0,1,1:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__letter-spacing", data);
 window.ftd.utils.node_change_call("main","0,1,1:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__font-size", data);
 window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-family", data);
 window.ftd.utils.node_change_call("main","0,0,1:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__letter-spacing", data);
 window.ftd.utils.node_change_call("main","0,1,2:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__letter-spacing", data);
 };
 
 window.set_value_main["ftd#device"] = function (data, new_value, remaining) {
@@ -1645,36 +1751,36 @@ window.ftd.utils.set_value_helper(data, "ftd#device", remaining, new_value);
 
 window.ftd.call_mutable_value_changes("ftd#device", "main");
 window.ftd.call_immutable_value_changes("ftd#device", "main");
-window.ftd.utils.node_change_call("main","0,1,2:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__font-family", data);
 window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__letter-spacing", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,1:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,0,1:main__font-size", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__font-family", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__font-weight", data);
-window.ftd.utils.node_change_call("main","0,1,0,0:main__letter-spacing", data);
 window.ftd.utils.node_change_call("main","0,1,0,0:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,2:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__font-weight", data);
 window.ftd.utils.node_change_call("main","0,1,0,1,0:main__line-height", data);
-window.ftd.utils.node_change_call("main","0,1,1:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,1:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__letter-spacing", data);
 window.ftd.utils.node_change_call("main","0,0,1:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,0,1,0:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__font-weight", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__font-family", data);
+window.ftd.utils.node_change_call("main","0,1,0,0:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__font-size", data);
+window.ftd.utils.node_change_call("main","0,1,1:main__letter-spacing", data);
+window.ftd.utils.node_change_call("main","0,1,2:main__line-height", data);
+window.ftd.utils.node_change_call("main","0,0,1:main__font-size", data);
 };
 
 

@@ -1,8 +1,5 @@
 -- import: fastn-stack.github.io/fastn-js/assets as js-assets
 
--- ftd.text: This is for imports
-js: [$js-assets.files.typo.js, $js-assets.files.figma.js]
-
 -- string $result: None
 
 -- string $formatted-string: None

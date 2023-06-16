@@ -37,7 +37,7 @@ width.fixed.px: 500
 height.fixed.px: 200
 $on-input$: $ftd.set-string($a = $current-json, v = $VALUE)
 
--- ftd.text: Get FTD equivalent code
+-- ftd.text: Generate FTD code
 role: $inherited.types.heading-small
 color: $inherited.colors.text-strong
 width.fixed.px: 200
@@ -45,12 +45,13 @@ $on-click$: $typo-to-ftd(json = $current-json, $store_at = $result, $formatted_s
 
 -- end: ftd.row
 
--- ds.code:
+-- ds.code: Typography FTD code
 if: { result != "None" }
 lang: ftd
 body: $formatted-string
 text: $result
 download: types.ftd
+max-height.fixed.px: 400
 
 -- end: ftd.column
 

@@ -68,7 +68,7 @@ function get_raw_data(data, value_name, imports_used) {
                 result = `${value_name}: $${assets_alias}.${element}`;
             }
             else {
-                result = `${value_name}: ${doc}.${element}`;
+                result = `${value_name}: $${doc}.${element}`;
             }
             return result;
         }
@@ -152,7 +152,210 @@ function typo_to_ftd(json) {
     let imports_used = new Set();
 
     let s =  `
+    ;; HEADING HERO ----------------
+    -- ftd.type heading-hero-mobile:
+    ${get_type_data(typo_mobile, "heading-hero", imports_used)}
 
+    -- ftd.type heading-hero-desktop:
+    ${get_type_data(typo_desktop, "heading-hero", imports_used)}
+
+    -- ftd.responsive-type heading-hero:
+    desktop: $heading-hero-desktop
+    mobile: $heading-hero-mobile
+
+
+    ;; HEADING LARGE ----------------
+    -- ftd.type heading-large-mobile:
+    ${get_type_data(typo_mobile, "heading-large", imports_used)}
+
+    -- ftd.type heading-large-desktop:
+    ${get_type_data(typo_desktop, "heading-large", imports_used)}
+
+    -- ftd.responsive-type heading-large:
+    desktop: $heading-large-desktop
+    mobile: $heading-large-mobile
+
+
+    ;; HEADING MEDIUM ----------------
+    -- ftd.type heading-medium-mobile:
+    ${get_type_data(typo_mobile, "heading-medium", imports_used)}
+
+    -- ftd.type heading-medium-desktop:
+    ${get_type_data(typo_desktop, "heading-medium", imports_used)}
+
+    -- ftd.responsive-type heading-medium:
+    desktop: $heading-medium-desktop
+    mobile: $heading-medium-mobile
+
+
+    ;; HEADING SMALL ---------------
+    -- ftd.type heading-small-mobile:
+    ${get_type_data(typo_mobile, "heading-small", imports_used)}
+
+    -- ftd.type heading-small-desktop:
+    ${get_type_data(typo_desktop, "heading-small", imports_used)}
+
+    -- ftd.responsive-type heading-small:
+    desktop: $heading-small-desktop
+    mobile: $heading-small-mobile
+
+
+    ;; HEADING TINY ----------------
+    -- ftd.type heading-tiny-mobile:
+    ${get_type_data(typo_mobile, "heading-tiny", imports_used)}
+
+    -- ftd.type heading-tiny-desktop:
+    ${get_type_data(typo_desktop, "heading-tiny", imports_used)}
+
+    -- ftd.responsive-type heading-tiny:
+    desktop: $heading-tiny-desktop
+    mobile: $heading-tiny-mobile
+
+
+    ;; COPY LARGE ---------------
+    -- ftd.type copy-large-mobile:
+    ${get_type_data(typo_mobile, "copy-large", imports_used)}
+
+    -- ftd.type copy-large-desktop:
+    ${get_type_data(typo_desktop, "copy-large", imports_used)}
+
+    -- ftd.responsive-type copy-large:
+    desktop: $copy-large-desktop
+    mobile: $copy-large-mobile
+
+
+    ;; COPY REGULAR ---------------
+    -- ftd.type copy-regular-mobile:
+    ${get_type_data(typo_mobile, "copy-regular", imports_used)}
+
+    -- ftd.type copy-regular-desktop:
+    ${get_type_data(typo_desktop, "copy-regular", imports_used)}
+
+    -- ftd.responsive-type copy-regular:
+    desktop: $copy-regular-desktop
+    mobile: $copy-regular-mobile
+
+
+    ;; COPY SMALL ----------------
+    -- ftd.type copy-small-mobile:
+    ${get_type_data(typo_mobile, "copy-small", imports_used)}
+
+    -- ftd.type copy-small-desktop:
+    ${get_type_data(typo_desktop, "copy-small", imports_used)}
+
+    -- ftd.responsive-type copy-small:
+    desktop: $copy-small-desktop
+    mobile: $copy-small-mobile
+
+
+    ;; FINE PRINT ----------------
+    -- ftd.type fine-print-mobile:
+    ${get_type_data(typo_mobile, "fine-print", imports_used)}
+
+    -- ftd.type fine-print-desktop:
+    ${get_type_data(typo_desktop, "fine-print", imports_used)}
+
+    -- ftd.responsive-type fine-print:
+    desktop: $fine-print-desktop
+    mobile: $fine-print-mobile
+
+
+    ;; BLOCK QUOTE --------------
+    -- ftd.type blockquote-mobile:
+    ${get_type_data(typo_mobile, "blockquote", imports_used)}
+
+    -- ftd.type blockquote-desktop:
+    ${get_type_data(typo_desktop, "blockquote", imports_used)}
+
+    -- ftd.responsive-type blockquote:
+    desktop: $blockquote-desktop
+    mobile: $blockquote-mobile
+
+
+    ;; SOURCE CODE ---------------
+    -- ftd.type source-code-mobile:
+    ${get_type_data(typo_mobile, "source-code", imports_used)}
+
+    -- ftd.type source-code-desktop:
+    ${get_type_data(typo_desktop, "source-code", imports_used)}
+
+    -- ftd.responsive-type source-code:
+    desktop: $source-code-desktop
+    mobile: $source-code-mobile
+
+
+    ;; LABEL LARGE ----------------
+    -- ftd.type label-large-mobile:
+    ${get_type_data(typo_mobile, "label-large", imports_used)}
+
+    -- ftd.type label-large-desktop:
+    ${get_type_data(typo_desktop, "label-large", imports_used)}
+
+    -- ftd.responsive-type label-large:
+    desktop: $label-large-desktop
+    mobile: $label-large-mobile
+
+
+    ;; LABEL SMALL ----------------
+    -- ftd.type label-small-mobile:
+    ${get_type_data(typo_mobile, "label-small", imports_used)}
+
+    -- ftd.type label-small-desktop:
+    ${get_type_data(typo_desktop, "label-small", imports_used)}
+
+    -- ftd.responsive-type label-small:
+    desktop: $label-small-desktop
+    mobile: $label-small-mobile
+
+
+    ;; BUTTON LARGE ----------------
+    -- ftd.type button-large-mobile:
+    ${get_type_data(typo_mobile, "button-large", imports_used)}
+
+    -- ftd.type button-large-desktop:
+    ${get_type_data(typo_desktop, "button-large", imports_used)}
+
+    -- ftd.responsive-type button-large:
+    desktop: $button-large-desktop
+    mobile: $button-large-mobile
+
+
+    ;; BUTTON MEDIUM ----------------
+    -- ftd.type button-medium-mobile:
+    ${get_type_data(typo_mobile, "button-medium", imports_used)}
+
+    -- ftd.type button-medium-desktop:
+    ${get_type_data(typo_desktop, "button-medium", imports_used)}
+
+    -- ftd.responsive-type button-medium:
+    desktop: $button-medium-desktop
+    mobile: $button-medium-mobile
+
+
+    ;; BUTTON SMALL ----------------
+    -- ftd.type button-small-mobile:
+    ${get_type_data(typo_mobile, "button-small", imports_used)}
+
+    -- ftd.type button-small-desktop:
+    ${get_type_data(typo_desktop, "button-small", imports_used)}
+
+    -- ftd.responsive-type button-small:
+    desktop: $button-small-desktop
+    mobile: $button-small-mobile
+
+
+    ;; LINK ----------------
+    -- ftd.type link-mobile:
+    ${get_type_data(typo_mobile, "link", imports_used)}
+
+    -- ftd.type link-desktop:
+    ${get_type_data(typo_desktop, "link", imports_used)}
+
+    -- ftd.responsive-type link:
+    desktop: $link-desktop
+    mobile: $link-mobile
+
+    ;; TYPE-DATA --------------
     -- ftd.type-data types:
     heading-hero: $heading-hero
     heading-large: $heading-large
@@ -171,218 +374,10 @@ function typo_to_ftd(json) {
     button-medium: $button-medium
     button-small: $button-small
     link: $link
-
-
-    ;; ------------------- HEADING HERO -------------------------------
-    -- ftd.type heading-hero-mobile:
-    ${get_type_data(typo_mobile, "heading-hero", imports_used)}
-
-    -- ftd.type heading-hero-desktop:
-    ${get_type_data(typo_desktop, "heading-hero", imports_used)}
-
-    -- ftd.responsive-type heading-hero:
-    desktop: $heading-hero-desktop
-    mobile: $heading-hero-mobile
-
-
-
-
-    ;; ------------------- HEADING LARGE -------------------------------
-    -- ftd.type heading-large-mobile:
-    ${get_type_data(typo_mobile, "heading-large", imports_used)}
-
-    -- ftd.type heading-large-desktop:
-    ${get_type_data(typo_desktop, "heading-large", imports_used)}
-
-    -- ftd.responsive-type heading-large:
-    desktop: $heading-large-desktop
-    mobile: $heading-large-mobile
-
-
-
-
-    ;; ------------------- HEADING MEDIUM -------------------------------
-    -- ftd.type heading-medium-mobile:
-    ${get_type_data(typo_mobile, "heading-medium", imports_used)}
-
-    -- ftd.type heading-medium-desktop:
-    ${get_type_data(typo_desktop, "heading-medium", imports_used)}
-
-    -- ftd.responsive-type heading-medium:
-    desktop: $heading-medium-desktop
-    mobile: $heading-medium-mobile
-
-
-    ;; ------------------- HEADING SMALL -------------------------------
-    -- ftd.type heading-small-mobile:
-    ${get_type_data(typo_mobile, "heading-small", imports_used)}
-
-    -- ftd.type heading-small-desktop:
-    ${get_type_data(typo_desktop, "heading-small", imports_used)}
-
-    -- ftd.responsive-type heading-small:
-    desktop: $heading-small-desktop
-    mobile: $heading-small-mobile
-
-
-    ;; ------------------- HEADING TINY -------------------------------
-    -- ftd.type heading-tiny-mobile:
-    ${get_type_data(typo_mobile, "heading-tiny", imports_used)}
-
-    -- ftd.type heading-tiny-desktop:
-    ${get_type_data(typo_desktop, "heading-tiny", imports_used)}
-
-    -- ftd.responsive-type heading-tiny:
-    desktop: $heading-tiny-desktop
-    mobile: $heading-tiny-mobile
-
-
-    ;; ------------------- COPY LARGE -------------------------------
-    -- ftd.type copy-large-mobile:
-    ${get_type_data(typo_mobile, "copy-large", imports_used)}
-
-    -- ftd.type copy-large-desktop:
-    ${get_type_data(typo_desktop, "copy-large", imports_used)}
-
-    -- ftd.responsive-type copy-large:
-    desktop: $copy-large-desktop
-    mobile: $copy-large-mobile
-
-
-    ;; ------------------- COPY REGULAR -------------------------------
-    -- ftd.type copy-regular-mobile:
-    ${get_type_data(typo_mobile, "copy-regular", imports_used)}
-
-    -- ftd.type copy-regular-desktop:
-    ${get_type_data(typo_desktop, "copy-regular", imports_used)}
-
-    -- ftd.responsive-type copy-regular:
-    desktop: $copy-regular-desktop
-    mobile: $copy-regular-mobile
-
-
-    ;; ------------------- COPY SMALL -------------------------------
-    -- ftd.type copy-small-mobile:
-    ${get_type_data(typo_mobile, "copy-small", imports_used)}
-
-    -- ftd.type copy-small-desktop:
-    ${get_type_data(typo_desktop, "copy-small", imports_used)}
-
-    -- ftd.responsive-type copy-small:
-    desktop: $copy-small-desktop
-    mobile: $copy-small-mobile
-
-
-    ;; ------------------- FINE PRINT -------------------------------
-    -- ftd.type fine-print-mobile:
-    ${get_type_data(typo_mobile, "fine-print", imports_used)}
-
-    -- ftd.type fine-print-desktop:
-    ${get_type_data(typo_desktop, "fine-print", imports_used)}
-
-    -- ftd.responsive-type fine-print:
-    desktop: $fine-print-desktop
-    mobile: $fine-print-mobile
-
-
-    ;; ------------------- BLOCK QUOTE -------------------------------
-    -- ftd.type blockquote-mobile:
-    ${get_type_data(typo_mobile, "blockquote", imports_used)}
-
-    -- ftd.type blockquote-desktop:
-    ${get_type_data(typo_desktop, "blockquote", imports_used)}
-
-    -- ftd.responsive-type blockquote:
-    desktop: $blockquote-desktop
-    mobile: $blockquote-mobile
-
-
-    ;; ------------------- SOURCE CODE -------------------------------
-    -- ftd.type source-code-mobile:
-    ${get_type_data(typo_mobile, "source-code", imports_used)}
-
-    -- ftd.type source-code-desktop:
-    ${get_type_data(typo_desktop, "source-code", imports_used)}
-
-    -- ftd.responsive-type source-code:
-    desktop: $source-code-desktop
-    mobile: $source-code-mobile
-
-
-    ;; ------------------- LABEL LARGE -------------------------------
-    -- ftd.type label-large-mobile:
-    ${get_type_data(typo_mobile, "label-large", imports_used)}
-
-    -- ftd.type label-large-desktop:
-    ${get_type_data(typo_desktop, "label-large", imports_used)}
-
-    -- ftd.responsive-type label-large:
-    desktop: $label-large-desktop
-    mobile: $label-large-mobile
-
-
-    ;; ------------------- LABEL SMALL -------------------------------
-    -- ftd.type label-small-mobile:
-    ${get_type_data(typo_mobile, "label-small", imports_used)}
-
-    -- ftd.type label-small-desktop:
-    ${get_type_data(typo_desktop, "label-small", imports_used)}
-
-    -- ftd.responsive-type label-small:
-    desktop: $label-small-desktop
-    mobile: $label-small-mobile
-
-
-    ;; ------------------- BUTTON LARGE -------------------------------
-    -- ftd.type button-large-mobile:
-    ${get_type_data(typo_mobile, "button-large", imports_used)}
-
-    -- ftd.type button-large-desktop:
-    ${get_type_data(typo_desktop, "button-large", imports_used)}
-
-    -- ftd.responsive-type button-large:
-    desktop: $button-large-desktop
-    mobile: $button-large-mobile
-
-
-    ;; ------------------- BUTTON MEDIUM -------------------------------
-    -- ftd.type button-medium-mobile:
-    ${get_type_data(typo_mobile, "button-medium", imports_used)}
-
-    -- ftd.type button-medium-desktop:
-    ${get_type_data(typo_desktop, "button-medium", imports_used)}
-
-    -- ftd.responsive-type button-medium:
-    desktop: $button-medium-desktop
-    mobile: $button-medium-mobile
-
-
-    ;; ------------------- BUTTON SMALL -------------------------------
-    -- ftd.type button-small-mobile:
-    ${get_type_data(typo_mobile, "button-small", imports_used)}
-
-    -- ftd.type button-small-desktop:
-    ${get_type_data(typo_desktop, "button-small", imports_used)}
-
-    -- ftd.responsive-type button-small:
-    desktop: $button-small-desktop
-    mobile: $button-small-mobile
-
-
-    ;; ------------------- LINK -------------------------------
-    -- ftd.type link-mobile:
-    ${get_type_data(typo_mobile, "link", imports_used)}
-
-    -- ftd.type link-desktop:
-    ${get_type_data(typo_desktop, "link", imports_used)}
-
-    -- ftd.responsive-type link:
-    desktop: $link-desktop
-    mobile: $link-mobile
     `
 
     let imports_string = get_asset_imports_string(imports_used);
-    let final = `${imports_string}\n\n${s}`;
+    let final = `${imports_string}${s}`.split("\n").map(s => s.trim()).join("\n");;
 
     let fs = `<pre>${apply_style(final)}</pre>`;
     return [final, fs];

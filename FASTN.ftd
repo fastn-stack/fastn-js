@@ -6,3 +6,13 @@ download-base-url: https://raw.githubusercontent.com/fastn-stack/fastn-js/main
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
 
 -- fastn.auto-import: ds
+
+-- fastn.sitemap:
+
+# Home: /
+
+# Typo Exporter: /typo/
+  document: typo-exporter.ftd
+
+# CS Exporter: /cs/
+  document: json-exporter.ftd

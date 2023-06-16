@@ -48,7 +48,7 @@ function apply_style(s) {
 }
 
 function get_raw_data(data, value_name, imports_used) {
-    if ('value' in data && "type" in data) {
+    if (data != null && "value" in data && "type" in data) {
         let value_type = data["type"];
         let value = data["value"];
 
@@ -85,7 +85,7 @@ function get_type_data(types, category, imports_used) {
 
     if ("font-family" in category_data) {
         let ff_data = get_raw_data(category_data["font-family"], "font-family", imports_used);
-        if ff_data != null {
+        if (ff_data != null) {
             result += ff_data;
             result += "\n";
         }
@@ -93,7 +93,7 @@ function get_type_data(types, category, imports_used) {
 
     if ("line-height" in category_data) {
         let ff_data = get_raw_data(category_data["line-height"], "line-height", imports_used);
-        if ff_data != null {
+        if (ff_data != null) {
             result += ff_data;
             result += "\n";
         }
@@ -101,7 +101,7 @@ function get_type_data(types, category, imports_used) {
 
     if ("letter-spacing" in category_data) {
         let ff_data = get_raw_data(category_data["letter-spacing"], "letter-spacing", imports_used);
-        if ff_data != null {
+        if (ff_data != null) {
             result += ff_data;
             result += "\n";
         }
@@ -109,7 +109,7 @@ function get_type_data(types, category, imports_used) {
 
     if ("weight" in category_data) {
         let ff_data = get_raw_data(category_data["weight"], "weight", imports_used);
-        if ff_data != null {
+        if (ff_data != null) {
             result += ff_data;
             result += "\n";
         }
@@ -117,7 +117,7 @@ function get_type_data(types, category, imports_used) {
 
     if ("size" in category_data) {
         let ff_data = get_raw_data(category_data["size"], "size", imports_used);
-        if ff_data != null {
+        if (ff_data != null) {
             result += ff_data;
             result += "\n";
         }
@@ -134,18 +134,18 @@ function get_asset_imports_string(imports_used) {
     return all_imports;
 }
 
-function typo_json(json) {
+function typo_to_ftd(json) {
     const typo_data = JSON.parse(json);
     let typo_desktop = Object.keys(typo_data)
-        .filter((key) => key.includes("-desktop"));
+        .filter((key) => key.includes("-desktop"))
         .reduce((obj, key) => {
-        obj = cs_data[key];
+        obj = typo_data[key];
         return obj;
     }, {});
-    let typo_mobile = Object.keys(cs_data)
+    let typo_mobile = Object.keys(typo_data)
         .filter((key) => key.includes("-mobile"))
         .reduce((obj, key) => {
-        obj = cs_data[key];
+        obj = typo_data[key];
         return obj;
     }, {});
 

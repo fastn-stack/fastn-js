@@ -10,7 +10,7 @@
 string json:
 string $store_at:
 string $formatted_string:
-js: $js-assets.files.figma.js
+js: [ $js-assets.files.figma.js ]
 
 value = figma_json_to_ftd(json);
 store_at = value[0];

@@ -1,0 +1,8 @@
+-- import: fastn-stack.github.io/fastn-js/assets
+
+-- void download-as-image(element_id,filename):
+string element_id:
+string filename:
+js: [//cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js, $assets.files.download.js]
+
+download_as_image(element_id, filename)

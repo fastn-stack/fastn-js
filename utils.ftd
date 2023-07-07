@@ -6,3 +6,24 @@ string filename:
 js: [//cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js, $assets.files.download.js]
 
 download_as_image(element_id, filename)
+
+-- void download-as-png(element_id,filename):
+string element_id:
+string filename:
+js: [//cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js, $assets.files.download.js]
+
+download_as_png(element_id, filename)
+
+-- void download-as-jpeg(element_id,filename):
+string element_id:
+string filename:
+js: [//cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js, $assets.files.download.js]
+
+download_as_jpeg(element_id, filename)
+
+-- void download-as-svg(element_id,filename):
+string element_id:
+string filename:
+js: [//cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js, $assets.files.download.js]
+
+download_as_svg(element_id, filename)

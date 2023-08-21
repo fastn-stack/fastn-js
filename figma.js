@@ -54,6 +54,7 @@ function get_color_value(cs, category, color_name) {
     return color_value;
 }
 function figma_json_to_ftd(json) {
+    if (json instanceof fastn.mutableClass) json = json.get();
     const cs_data = JSON.parse(json);
     let cs_light = Object.keys(cs_data)
         .filter((key) => key.includes("-light"))

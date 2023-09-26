@@ -7,3 +7,11 @@ function clampDecrement(a, by, min, max) {
     }
     a.set(newValue);
 }
+
+function getRange(min, max) {
+    const result = [];
+    for (let i = min.get(); i < max.get(); i++) {
+        result.push(i);
+    }
+    return fastn.mutableList(result);
+}

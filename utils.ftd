@@ -49,3 +49,11 @@ integer max: 5
 js: [$assets.files.lib.js]
 
 clampDecrement(a, by, min, max)
+
+
+-- integer list range(min,max):
+integer min: 0
+integer max:
+js: [$assets.files.lib.js]
+
+getRange(min, max)

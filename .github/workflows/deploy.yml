@@ -18,21 +18,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: FranzDiebold/github-env-vars-action@v2
-      - name: Install fastn
-        id: install_fastn
-        continue-on-error: false
-        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/fastn-stack/fastn/main/install.sh)"
+      - run: sh -c "$(curl -fsSL https://fastn.io/install.sh)"
       - name: Build the pages with fastn
-        id: build
-        continue-on-error: false
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
-          fastn build --base=/$CI_REPOSITORY_NAME/
-      - name: copy CNAME
+          # To deploy the website using GitHub Pages, use the below command
+          fastn build --edition=2023 --base=/$CI_REPOSITORY_NAME/
+          # To deploy the website using Custom Domain, use the below command and comment
+          #out the above command when deploying through GitHub Pages 
+          #fastn build --edition=2023 --base=/
+      - name: copy CNAME if found
         run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./.build

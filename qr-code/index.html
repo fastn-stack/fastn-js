@@ -781,7 +781,10 @@ __fastn_package_name__ = "fastn_stack_github_io_fastn_js";
 try {
 let parenti0 = fastn_stack_github_io_fastn_js_qr_code___show(parent, inherited, {
 url: "https://fastn.com",
-id: "fastn"
+id: "fastn",
+color: global.fastn_stack_github_io_fastn_js_qr_code___ow,
+bg_color: global.fastn_stack_github_io_fastn_js_qr_code___yb,
+level: 100
 });
 } finally {
 __fastn_package_name__ = __fastn_super_package_name__;
@@ -789,14 +792,19 @@ __fastn_package_name__ = __fastn_super_package_name__;
 }
 global["main"] = main;
 fastn_utils.createNestedObject(global, "fastn_stack_github_io_fastn_js_assets__files.qrCode.js", "-/fastn-stack.github.io/fastn-js/qrCode.js");
-let fastn_stack_github_io_fastn_js_qr_code___qrCode = function (args)
+let fastn_stack_github_io_fastn_js_qr_code___qr_code_generate = function (args)
 {
 let __fastn_super_package_name__ = __fastn_package_name__;
 __fastn_package_name__ = "fastn_stack_github_io_fastn_js";
 try {
 let __args__ = fastn_utils.getArgs({
+width: null,
+height: null,
+color: null,
+bgcolor: null,
+level: null,
 }, args);
-return (qrCodeGenerate(__args__.id, __args__.url));
+return (qrCodeGenerateWithConfig(__args__.id, __args__.url, __args__.width, __args__.height, __args__.color, __args__.bgcolor, __args__.darkmode, __args__.level));
 } catch (e) {
 if (!ssr) {
 throw e;
@@ -805,13 +813,18 @@ throw e;
 __fastn_package_name__ = __fastn_super_package_name__;
 }
 }
-global["fastn_stack_github_io_fastn_js_qr_code___qrCode"] = fastn_stack_github_io_fastn_js_qr_code___qrCode;
+global["fastn_stack_github_io_fastn_js_qr_code___qr_code_generate"] = fastn_stack_github_io_fastn_js_qr_code___qr_code_generate;
 let fastn_stack_github_io_fastn_js_qr_code___show = function (parent, inherited, args)
 {
 let __fastn_super_package_name__ = __fastn_package_name__;
 __fastn_package_name__ = "fastn_stack_github_io_fastn_js";
 try {
 let __args__ = {
+width: null,
+height: null,
+color: null,
+bg_color: null,
+level: null,
 };
 inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
 __args__ = fastn_utils.getArgs(__args__, args);
@@ -819,11 +832,23 @@ let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
 parenti0.setProperty(fastn_dom.PropertyKind.Id, __args__.id, inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
 let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
-rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, fastn.formula([__args__.id,
-__args__.url], function () {
-return fastn_stack_github_io_fastn_js_qr_code___qrCode({
+rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, fastn.formula([__args__.bg_color,
+__args__.color,
+ftd.dark_mode,
+__args__.height,
+__args__.id,
+__args__.level,
+__args__.url,
+__args__.width], function () {
+return fastn_stack_github_io_fastn_js_qr_code___qr_code_generate({
 id: __args__.id,
 url: __args__.url,
+width: __args__.width,
+height: __args__.height,
+color: __args__.color,
+bgcolor: __args__.bg_color,
+darkmode: ftd.dark_mode,
+level: __args__.level,
 }, rooti0);
 }), inherited);
 }
@@ -834,6 +859,14 @@ __fastn_package_name__ = __fastn_super_package_name__;
 }
 }
 global["fastn_stack_github_io_fastn_js_qr_code___show"] = fastn_stack_github_io_fastn_js_qr_code___show;
+fastn_utils.createNestedObject(global, "fastn_stack_github_io_fastn_js_qr_code___ow", fastn.recordInstance({
+light: "#ef8435",
+dark: "black"
+}));
+fastn_utils.createNestedObject(global, "fastn_stack_github_io_fastn_js_qr_code___yb", fastn.recordInstance({
+light: "yellow",
+dark: "white"
+}));
 fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
 fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
 fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";

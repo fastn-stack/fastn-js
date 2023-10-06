@@ -1,10 +1,22 @@
 -- import: fastn-stack.github.io/fastn-js/assets
 
+
+-- ftd.column:
+spacing.fixed.px: 40
+
 -- show: https://fastn.com
 id: fastn
 color: $ow
 bg-color: $yb
 level: 100
+
+
+-- show: https://fastn.com
+id: fastn-1
+
+
+-- end: ftd.column
+
 
 
 
@@ -21,15 +33,23 @@ optional integer level:
 -- ftd.column:
 id: $show.id
 
-/-- ftd.image:
-src: $qrCode(id = $show.id, url = $show.url)
-
 -- ftd.image:
 src: $qr-code-generate(id = $show.id, url = $show.url, width = $show.width, height = $show.height, color = $show.color, bgcolor = $show.bg-color, darkmode = $ftd.dark-mode, level = $show.level)
 
 -- end: ftd.column
 
 -- end: show
+
+
+
+
+
+
+
+
+
+
+
 
 
 

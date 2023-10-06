@@ -15,7 +15,7 @@ let __fastn_package_name__ = "fastn-stack.github.io/fastn-js";
 <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
 <script src="default-E3C017D4C382725B81FF2AC7231A8365F88BA7857217E1885BBAA9D1119B2F53.js"></script>
 <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
-<script src="-/fastn-stack.github.io/fastn-js/qrCode.js"></script><script src="//cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="//cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script><script src="-/fastn-stack.github.io/fastn-js/qrCode.js"></script>
 
 
 <style>
@@ -330,9 +330,10 @@ padding-bottom: 3px;
 </style>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column"><img data-id="4"></img></div></div></body><style id="styles">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column __g-3"><div data-id="4" class="ft_column"><img data-id="5"></img></div><div data-id="6" class="ft_column"><img data-id="7"></img></div></div></div></body><style id="styles">
 .__w-1 { width: 100%; }
 .__h-2 { height: 100%; }
+.__g-3 { gap: 40px; }
 </style><style>
 
 
@@ -779,13 +780,24 @@ let main = function (parent) {
 let __fastn_super_package_name__ = __fastn_package_name__;
 __fastn_package_name__ = "fastn_stack_github_io_fastn_js";
 try {
-let parenti0 = fastn_stack_github_io_fastn_js_qr_code___show(parent, inherited, {
+let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(40)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+let rooti0 = fastn_stack_github_io_fastn_js_qr_code___show(root, inherited, {
 url: "https://fastn.com",
 id: "fastn",
 color: global.fastn_stack_github_io_fastn_js_qr_code___ow,
 bg_color: global.fastn_stack_github_io_fastn_js_qr_code___yb,
 level: 100
 });
+},
+function (root, inherited) {
+let rooti0 = fastn_stack_github_io_fastn_js_qr_code___show(root, inherited, {
+url: "https://fastn.com",
+id: "fastn-1"
+});
+}
+]), inherited);
 } finally {
 __fastn_package_name__ = __fastn_super_package_name__;
 }

@@ -1,0 +1,34 @@
+-- import: fastn-stack.github.io/fastn-js/assets
+
+-- show: https://fastn.com
+id: fastn
+
+
+-- component show:
+caption url:
+string id:
+
+-- ftd.column:
+id: $show.id
+
+-- ftd.image:
+src: $qrCode(id = $show.id, url = $show.url)
+
+-- end: ftd.column
+
+-- end: show
+
+
+
+
+
+
+
+
+
+-- ftd.image-src qrCode(id):
+string id:
+string url:
+js: [//cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js, $assets.files.qrCode.js]
+
+qrCodeGenerate(id, url)

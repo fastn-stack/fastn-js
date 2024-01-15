@@ -63,3 +63,11 @@ function download_as_svg(element_id, filename) {
         console.error('Error downloading image:', error);
       });
 }
+
+function download_text(filename, text) {
+    const blob = new Blob([fastn_utils.getStaticValue(text)], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = filename;
+    link.click();
+}
